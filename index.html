@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather">
+        <input  type="search" class="weather_search"  list="suggestion" placeholder="Your City">
+        <datalist id="suggestion">
+           
+        </datalist>
+        <div class="weather_today">
+            <div class="weather_details">
+                <h2 class="weather_city">City </h2>
+                <p class="weather_day">day</p>
+                <div class="weather_current">
+                    <p class="weather_indicator weather_indicator--humidity"><span class="value">50</span>%</p>
+                    <p class="weather_indicator weather_indicator--wind"><span class="value">west, 5</span>m/s</p>
+                    <p class="weather_indicator weather_indicator--pressure"><span class="value">1020</span>hpa</p>
+                </div>
+
+            </div>
+            <img src="images/clear-sky.png" alt="Clear Sky" class="weather_image">
+            <div class="weather_temperature"><span class="value">+25</span>&deg;C</div>
+
+        </div>
+        <div class="weather_forcast">
+            <article class="weather_forcast_item">
+                <img src="images/clear-sky.png" alt="Clear sky" class="weather_forcast_icon">
+                <h3 class="weather_forcast_day">Day</h3>
+                <p class="weather_forcast_temperature"><span class="value">+25</span>&deg;C</p>
+            </article>
+            <article class="weather_forcast_item">
+                <img src="images/clear-sky.png" alt="Clear sky" class="weather_forcast_icon">
+                <h3 class="weather_forcast_day">Day</h3>
+                <p class="weather_forcast_temperature"><span class="value">+25</span>&deg;C</p>
+            </article>
+            <article class="weather_forcast_item">
+                <img src="images/clear-sky.png" alt="Clear sky" class="weather_forcast_icon">
+                <h3 class="weather_forcast_day">Day</h3>
+                <p class="weather_forcast_temperature"><span class="value">+25</span>&deg;C</p>
+            </article>
+            <article class="weather_forcast_item">
+                <img src="images/clear-sky.png" alt="Clear sky" class="weather_forcast_icon">
+                <h3 class="weather_forcast_day">Day</h3>
+                <p class="weather_forcast_temperature"><span class="value">+25</span>&deg;C</p>
+            </article>
+            <article class="weather_forcast_item">
+                <img src="images/clear-sky.png" alt="Clear sky" class="weather_forcast_icon">
+                <h3 class="weather_forcast_day">Day</h3>
+                <p class="weather_forcast_temperature"><span class="value">+25</span>&deg;C</p>
+            </article> 
+
+        </div>
+
+    </div>
+
+    <script src="scriptt.js"></script>
+</body>
+</html>
