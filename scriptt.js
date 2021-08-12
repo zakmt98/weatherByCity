@@ -9,6 +9,7 @@ let day = document.querySelector('.weather_day')
 let forcastBlock = document.querySelector('.weather_forcast');
 let weatherAPIkey='86d9b473438bb159b19e9b67a24252ac';
 let suggsetion = document.querySelector('#suggestion')
+let hour = document.querySelector('.hour')
 let weatherBaseEndpoint='https://api.openweathermap.org/data/2.5/weather?units=metric&appid='+weatherAPIkey;
 let forcastBaseEndpoint = 'https://api.openweathermap.org/data/2.5/forecast?units=metric&appid='+weatherAPIkey
 let cityBaseEndpoint = 'https://api.teleport.org/api/cities/?search='
@@ -53,7 +54,16 @@ let weatherImages = [
 
     ];
 
+    setInterval(sethour, 1000);
 
+   function sethour() {
+      let d = new Date();
+      hour.textContent =
+      d.getHours() + ":" +
+      d.getMinutes() + ":" +
+      d.getSeconds()+'  UTC';
+    
+    }
 let getWeatherByCity = async (citystring)=>{
     let city;
     if(citystring.includes(',')){
